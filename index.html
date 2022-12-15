@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,112 @@
     <link rel="stylesheet" href="style.css">
     <title>Aidai-portfolio</title>
 </head>
+
 <body>
-    <div class="menu">
-        <a href="">HOME</a>
-        <a href="https://www.instagram.com/_jyldyzbekova__/?next=%2F">INSTAGRAM</a>
-        <a href="https://www.behance.net/aidaizhyldyz1?">BEHANCE</a>
-    </div>
-    <div class="content_container">
-        <div class="info_container">
-            <h1>Zhyldyzbekova Aidai</h1>
-            <h3>Designer & student</h3>
-            <p>Hello, I'm Aidai. I make animations and graphic design, to check my works <br> look at my Behance account</p>
-            <button class="button">Connect via Whatsapp</button>
+    <nav class="navbar">
+        <h1 class="logo">Aidai Zhyldyzbekova</h1>
+        <ul class="nav-links-container">
+            <li class="nav-link"><a href="#home-section" class="links active">home</a></li>
+            <li class="nav-link"><a href="#project-section" class="links">projects</a></li>
+            <li class="nav-link"><a href="#about-section" class="links">about</a></li>
+            <li class="nav-link"><a href="#contact-section" class="links">contact</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home-section">
+        <div class="content">
+            <h1 class="header-heading">Hey, I am <span class="brand-name">Web<span>Designer</span></span></h1>
         </div>
-        <div>
-            <img src="photo.jpeg" alt="Avatar" class="photo" />
+
+        <div class="header-img-container">
+            <div class="circle"></div>
+            <img src="photo.jpeg" class="header-img" alt="">
         </div>
+    </header>
+    <!-- about section -->
+
+    <section id="about-section">
+        <h1 class="heading">about me</h1>
+        <!-- about -->
+        <div class="about-container">
+            <div class="image-container">
+                <div class="square"></div>
+                <img src="photo.jpeg" class="about-img" alt="">
+                <div class="social-links">
+                    <a href="#"><img src="behance.png" class="social-img" alt=""></a>
+                    <a href="#"><img src="insta.png" class="social-img" alt=""></a>
+                    <a href="#"><img src="fb.png" class="social-img" alt=""></a>
+                    <a href="#"><img src="twiw.png" class="social-img" alt=""></a>
+                </div>
+            </div>
+
+            <!-- info part -->
+            <div class="info">
+                <p>I would like to tell you about myself. My name is Aida, I am 17 years old. I have many hobbies( I
+                    like to knit toys, draw pictures, I love read and bake cakes) but one of my main hobbies is graphic
+                    design. When I design, I can enjoy the process of creating different projects. I want to continue to
+                    develop and improve my skills in this area.</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="sub-heading">skills</h2>
+
+    <div class="skills">
+        <p class="skill-name">Photoshop</p>
+        <p class="skill-name">Figma</p>
+        <p class="skill-name">Adobe Illustrator</p>
+        <p class="skill-name">Adobe After Effects</p>
     </div>
 
+    <!-- time line -->
 
-    <h1 class="title">My projects</h1>
-    <div class="projects_container">
-        <div class="project">
-            <img src="kitticrew2.png" alt="kitty-crew" class="kitty" />
-            <h3>Typography project</h3>
-            <p>This project was made for typography company. Illustrator was used to make this effect</p>
-        </div>
-        <div class="project">
-            <img src="food.png" alt="food" class="food" />
-            <h3>Typography project</h3>
-            <p>This project was made for typography company. Illustrator was used to make this effect</p>
-        </div>
-        <div class="project">
-            <img src="hayao miyazaki.jpg" alt="hayao" class="hayao" />
-            <h3>Typography project</h3>
-            <p>This project was made for typography company. Illustrator was used to make this effect</p>
+    <h2 class="sub-heading">education and experiences</h2>
+
+    <div class="timeline-container">
+        <div class="card-container">
+            <div class="card">
+                <h1 class="card-title">2020 - 2023</h1>
+                <p class="card-body">Ala-too college</p>
+            </div>
         </div>
     </div>
+    <h1 class="heading">Projects</h1>
+
+
+    <!--  project cards -->
+
+    <div class="card_main_container">
+        <div class="profile-card">
+            <div>
+                <img src="kitticrew2.png" alt="" class="card_image">
+            </div>
+            <div class="card_data">
+                <h2>Kitty Crew</h2>
+                <span>Design for icecream</span>
+            </div>
+
+        </div>
+        <div class="profile-card">
+            <div>
+                <img src="food.png" alt="" class="card_image">
+            </div>
+            <div class="card_data">
+                <h2>Ramen</h2>
+                <span>Design for restaraunt</span>
+            </div>
+
+        </div>
+        <div class="profile-card">
+            <div>
+                <img src="hayao miyazaki.jpg" alt="" class="card_image">
+            </div>
+            <div class="card_data">
+                <h2>Hayao Miyazaki</h2>
+                <span>Design for documentation film</span>
+            </div>
+
+        </div>
+    </div>
+    </section>
 </body>
+
 </html>
